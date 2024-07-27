@@ -1,4 +1,4 @@
-VERSION := v0.0.1
+VERSION := v0.0.2
 COMMIT_HASH := $(shell git rev-parse --short HEAD 2>/dev/null || echo "main")
 BUILD_DATE := $(shell date '+%Y-%m-%d')
 

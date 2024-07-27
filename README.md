@@ -8,12 +8,12 @@ Go 1.7.6 or later is required.
 
 ### For Go version before 1.16
 ```shell
-go get -u github.com/hightech-ninja/valctx
+go get -u github.com/hightech-ninja/valctx/cmd/valctx
 ```
 
 ### For Go 1.16
 ```shell
-go install github.com/hightech-ninja/valctx@latest
+go install github.com/hightech-ninja/valctx/cmd/valctx@latest
 ```
 
 ### For Go 1.17 and later
@@ -21,7 +21,7 @@ You can use `go run` command together with `//go:generate` directive.
 ```go
 package main
 
-//go:generate go run github.com/hightech-ninja/valctx@latest -output gen/ctx.go -package gen -field UserID:string
+//go:generate go run github.com/hightech-ninja/valctx/cmd/valctx@latest -output gen/ctx.go -package gen -field UserID:string
 ```
 
 And then run:

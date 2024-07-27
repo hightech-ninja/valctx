@@ -13,9 +13,9 @@ import (
 
 // Version, CommitHash, BuildDate are set with ldflags.
 var (
-	Version    string
-	CommitHash string
-	BuildDate  string
+	Version    = "latest"
+	CommitHash = "main"
+	BuildDate  = "unknown"
 )
 
 func main() {
